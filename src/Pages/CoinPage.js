@@ -19,8 +19,6 @@ const CoinPage = () => {
         setCoin(data);
     }
 
-    console.log(coin);
-
     useEffect(() => {
         fetchCoin();
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -82,7 +80,6 @@ const CoinPage = () => {
 
     return (
         <div className={classes.container}>
-            CoinPage
             <div className={classes.sidebar}>
                 <img
                     src={coin?.image.large}

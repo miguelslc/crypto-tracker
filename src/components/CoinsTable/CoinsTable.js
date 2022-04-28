@@ -59,7 +59,6 @@ export default function CoinsTable() {
         setLoading(false);
     };
 
-    console.log(coins);
     useEffect(() => {
         fetchCoins();
     }, [currency]);
